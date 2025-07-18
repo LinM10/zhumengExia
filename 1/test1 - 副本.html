@@ -1,0 +1,1363 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>广东技术师范大学助梦e夏科技成果展</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background-color: rgb(164, 203, 236);
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            border-top: 2px solid white;
+        }
+        
+        nav {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            background-color: rgb(164, 203, 236);
+            padding: 0.5rem;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+        }
+        
+        nav img {
+            height: 50px;
+            margin-right: 1rem;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-left: 1rem;
+        }
+        
+        nav ul li {
+            margin: 0 1rem;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem;
+            cursor: pointer;
+        }
+        
+        nav ul li a:hover {
+            background-color: rgb(125, 162, 206);
+            border-radius: 4px;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 6rem;
+        }
+        
+        main {
+            flex: 2;
+            padding-right: 2rem;
+        }
+        
+        aside {
+            flex: 1;
+        }
+        
+        section {
+            background-color: white;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        section h2 {
+            color: rgb(125, 162, 206);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #eee;
+        }
+        
+        /* 通用图片网格样式 */
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 2rem; /* 增加间距 */
+            margin-top: 1rem;
+        }
+        
+        /* 大屏幕每行显示4个项目 */
+        @media (min-width: 1200px) {
+            .image-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+        
+        .image-item {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .image-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .image-item1 {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .image-item1:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .image-item2 {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .image-item2:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .image-item3 {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .image-item3:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .image-item4 {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .image-item4:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .image-item5 {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .image-item5:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .image-item6 {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .image-item6:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .image-item7 {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .image-item7:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .image-item8 {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .image-item8:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .image-item9 {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .image-item9:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .image-item10 {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .image-item10:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .image-item11 {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .image-item11:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .image-item12 {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .image-item12:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        /* 4:5 宽高比的图片容器 */
+        .image-container {
+            position: relative;
+            width: 100%;
+            padding-top: 125%; /* 4:5 宽高比 (5/4 = 125%) */
+            background-color: #f0f0f0;
+        }
+        
+        .image-container img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .image-caption {
+            padding: 1rem;
+            text-align: center;
+            font-size: 1rem;
+            color: white;
+            background-color: rgb(164, 203, 236);
+            border-top: 1px solid #eee;
+        }
+
+        /* 视频播放提示 - 适用于机器人和AI作品集 */
+        /* #robotics-section .image-item.has-video::after, */
+        #ai-section .image-item.has-video::after {
+            content: "▶";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 40px;
+            text-shadow: 0 0 15px rgba(0,0,0,0.7);
+            opacity: 0;
+            transition: all 0.3s ease;
+            background-color: rgba(0,0,0,0.3);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 10;
+        }
+        
+        /* #robotics-section .image-item.has-video:hover::after, */
+        #ai-section .image-item.has-video:hover::after {
+            opacity: 1;
+        }
+
+
+        /* 首页特有样式 */
+        .home-intro {
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+        
+        .home-section {
+            margin-bottom: 3rem;
+        }
+        
+        .home-section h3 {
+            color: rgb(125, 162, 206);
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        footer {
+            background-color: rgb(164, 203, 236);
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 2rem;
+        }
+
+        /* 公众号推文样式 */
+        .wechat-tweet {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .wechat-tweet:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        .wechat-tweet .source {
+            font-size: 0.8rem;
+            color: #666;
+            margin-bottom: 0.3rem;
+        }
+        
+        .wechat-tweet a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+            line-height: 1.5;
+        }
+        
+        .wechat-tweet a:hover {
+            color: rgb(125, 162, 206);
+            text-decoration: underline;
+        }
+        
+        .wechat-tweet .date {
+            font-size: 0.75rem;
+            color: #999;
+            margin-top: 0.3rem;
+            display: block;
+        }
+
+        /* 内容显示/隐藏控制 */
+        .content-section {
+            display: none;
+        }
+        
+        .content-section.active {
+            display: block;
+        }
+
+        /* 侧边栏显示控制 */
+        .sidebar-hidden aside {
+            display: none;
+        }
+        
+        .sidebar-hidden main {
+            flex: 1;
+            padding-right: 0;
+        }
+        
+        /* 响应式调整 */
+        @media (max-width: 1200px) {
+            .image-grid {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            }
+        }
+        
+        @media (max-width: 992px) {
+            .image-grid {
+                grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            
+            main {
+                padding-right: 0;
+                margin-bottom: 2rem;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+            
+            .image-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .image-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <img src="网页设计\image\team.png" alt="Team Logo">
+        <ul>
+            <li><a class="nav-link" data-target="home">首页</a></li>
+            <li><a class="nav-link" data-target="vr-section">VR作品集</a></li>
+            <li><a class="nav-link" data-target="robotics-section">机器人作品集</a></li>
+            <li><a class="nav-link" data-target="ai-section">AI作品集</a></li>
+            <li><a class="nav-link" data-target="other-section">其他作品集</a></li>
+            <li><a href="https://mp.weixin.qq.com/s/dkuL0jtRC8TO7qaFMSJ63A" target="_blank">关于我们</a></li>
+            
+        </ul>
+        <img src="网页设计\image\logo.png" alt="Team Logo">
+    </nav>
+    <header>
+        <h1>广东技术师范大学助梦e夏科技成果展</h1>
+        <p>记录三下乡过程中的科技运用展示</p>
+    </header>
+    <div class="container">
+        <main>
+            <!-- 首页内容 -->
+            <section id="home" class="content-section active">
+                <div class="home-intro">
+                    <h2>欢迎来到广东技术师范大学助梦e夏科技成果展</h2>
+                    <p>这里展示了我们团队在三下乡过程中开发的各种科技成果，包括VR技术应用、机器人项目及AI创新实践等内容，记录着我们助力乡村振兴的每一步足迹。</p>
+                </div>
+
+                <!-- 课堂互动图片区 -->
+                <div class="home-section">
+                    <h3>课堂互动精彩瞬间</h3>
+                    <div class="image-grid">
+                        <div class="image-item">
+                            <div class="image-container">
+                                <img src="image/AI课/1.JPG" alt="VR课堂互动" class="AI1">
+                            </div>
+                            <div class="image-caption">AI知识趣味讲解</div>
+                        </div>
+                        <div class="image-item1">
+                            <div class="image-container">
+                                <img src="image/VR/1.JPG" alt="机器人教学互动" class="AI2">
+                            </div>
+                            <div class="image-caption">VR技术体验课堂</div>
+                        </div>
+                        <div class="image-item2">
+                            <div class="image-container">
+                                <img src="image/机器人课/1.JPG" alt="AI知识讲解" class="AI3">
+                            </div>
+                            <div class="image-caption">机器人教学互动</div>
+                        </div>
+                        <div class="image-item3">
+                            <div class="image-container">
+                                <img src="网页设计\image\class4.jpg" alt="小组合作实践" class="AI4">
+                            </div>
+                            <div class="image-caption">小组合作实践环节</div>
+                        </div>
+                        <div class="image-item4">
+                            <div class="image-container">
+                                <img src="网页设计\image\class5.jpg" alt="成果展示分享" class="AI5">
+                            </div>
+                            <div class="image-caption">学生成果展示分享</div>
+                        </div>
+                        <div class="image-item5">
+                            <div class="image-container">
+                                <img src="image/其他课/1.JPG" alt="科技小实验" class="AI6">
+                            </div>
+                            <div class="image-caption">其他课堂图片</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 活动现场图片区 -->
+                <div class="home-section">
+                    <h3>三下乡活动现场纪实</h3>
+                    <div class="image-grid">
+                        <div class="image-item6">
+                            <div class="image-container">
+                                <img src="网页设计\image\event1.jpg" alt="活动启动仪式">
+                            </div>
+                            <div class="image-caption">活动启动仪式</div>
+                        </div>
+                        <div class="image-item7">
+                            <div class="image-container">
+                                <img src="网页设计\image\event2.jpg" alt="当地学生参观">
+                            </div>
+                            <div class="image-caption">学生参观公安局旧址</div>
+                        </div>
+                        <div class="image-item8">
+                            <div class="image-container">
+                                <img src="网页设计\image\event3.jpg" alt="团队研讨">
+                            </div>
+                            <div class="image-caption">团队研讨教学方案</div>
+                        </div>
+                        <div class="image-item9">
+                            <div class="image-container">
+                                <img src="网页设计\image\event4.jpg" alt="设备调试">
+                            </div>
+                            <div class="image-caption">教师团合照</div>
+                        </div>
+                        <div class="image-item10">
+                            <div class="image-container">
+                                <img src="网页设计\image\event5.jpg" alt="成果展示">
+                            </div>
+                            <div class="image-caption">科技成果展示现场</div>
+                        </div>
+                        <div class="image-item11">
+                            <div class="image-container">
+                                <img src="网页设计\image\event6.jpg" alt="师生合影">
+                            </div>
+                            <div class="image-caption">师生合影留念</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- VR作品集 -->
+                        <!-- VR作品集 -->
+            <section id="vr-section" class="content-section">
+                <h2>VR作品集</h2>
+                <div class="image-grid">
+                    <div class="image-item">
+                        <a href="https://www.720yun.com/vr/2fdjt54m5O7" target="_blank" style="display: block; height: 100%;">
+                            <div class="image-container">
+                                <img src="image\VR1.jpg" alt="VR乡村全景">
+                            </div>
+                            <div class="image-caption">大埔中学</div>
+                        </a>
+                    </div>
+                    <div class="image-item">
+                        <a href="https://realsee.cn/9YEYpg3Z?source=wechat_session" target="_blank" style="display: block; height: 100%;">
+                            <div class="image-container">
+                                <img src="image\VR2.png" alt="VR非遗体验">
+                            </div>
+                            <div class="image-caption">前进路</div>
+                        </a>
+                    </div>
+                    <div class="image-item">
+                        <a href="https://realsee.cn/bZlZpv8G?source=wechat_session" target="_blank" style="display: block; height: 100%;">
+                            <div class="image-container">
+                                <img src="image\VR3.jpg" alt="VR虚拟课堂">
+                            </div>
+                            <div class="image-caption">孔子像后面</div>
+                        </a>
+                    </div>
+                    <div class="image-item">
+                        <a href="https://realsee.cn/dGqGxLy0?source=wechat_session" target="_blank" style="display: block; height: 100%;">
+                            <div class="image-container">
+                                <img src="image\VR4.jpg" alt="VR安全教育">
+                            </div>
+                            <div class="image-caption">何汝精校史馆</div>
+                        </a>
+                    </div>
+                    <div class="image-item">
+                        <a href="https://realsee.cn/kPJP5xev" target="_blank" style="display: block; height: 100%;">
+                            <div class="image-container">
+                                <img src="image\VR5.jpg" alt="VR红色教育">
+                            </div>
+                            <div class="image-caption">公安局旧址一楼</div>
+                        </a>
+                    </div>
+                    <div class="image-item">
+                        <a href="https://realsee.cn/Qw5wZrvk?source=wechat_session" target="_blank" style="display: block; height: 100%;">
+                            <div class="image-container">
+                                <img src="image\VR6.jpg" alt="VR红色教育">
+                            </div>
+                            <div class="image-caption">公安局旧址二楼</div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+                        <!-- 机器人作品集 -->
+                        <!-- 机器人作品集 -->
+            <section id="robotics-section" class="content-section">
+                <h2>机器人作品集</h2>
+                <div class="image-grid"> <!-- 统一使用一个image-grid容器 -->
+                    <div class="image-item has-video">
+                        <a href="https://3d.hunyuan.tencent.com/share?shareId=646f0dca-33be-4b4e-9613-b5bd26931522" target="_blank" style="display: block; height: 100%;">
+                            <div class="image-container">
+                                <img src="image/robot1.jpg" alt="教育机器人">
+                            </div>
+                            <div class="image-caption">多功能雪橇车</div>
+                        </a>
+                    </div>
+                    <div class="image-item has-video">
+                        <a href="https://3d.hunyuan.tencent.com/share?shareId=cdc92f21-7a41-437d-9fbb-7728a07e6561" target="_blank" style="display: block; height: 100%;">
+                            <div class="image-container">
+                                <img src="image/robot2.jpg" alt="机械臂演示">
+                            </div>
+                            <div class="image-caption">竞走机器人</div>
+                        </a>
+                    </div>
+                    <div class="image-item has-video">
+                        <a href="https://3d.hunyuan.tencent.com/share?shareId=e1ead246-9bc5-45b0-a9cb-2a7bb52550e2" target="_blank" style="display: block; height: 100%;">
+                            <div class="image-container">
+                                <img src="image/robot3.jpg" alt="机器人舞蹈">
+                            </div>
+                            <div class="image-caption">等臂杠杠</div>
+                        </a>
+                    </div>
+                    <div class="image-item has-video">
+                        <a href="https://www.720yun.com/3dm/b79z6225ris" target="_blank" style="display: block; height: 100%;">
+                            <div class="image-container">
+                                <img src="image/robot4.jpg" alt="避障机器人">
+                            </div>
+                            <div class="image-caption">秋千</div>
+                        </a>
+                    </div>
+                    <div class="image-item has-video">
+                        <a href="https://www.720yun.com/3dm/afdz5e25r8e" target="_blank" style="display: block; height: 100%;">
+                            <div class="image-container">
+                                <img src="image/robot5.jpg" alt="机器人编程">
+                            </div>
+                            <div class="image-caption">费力杠杠</div>
+                        </a>
+                    </div>
+                    <!-- 新增的三个项目，已放入统一的image-grid容器中 -->
+                    <div class="image-item has-video">
+                        <a href="https://www.720yun.com/3dm/bf4z6525rik" target="_blank" style="display: block; height: 100%;">
+                            <div class="image-container">
+                                <img src="image/robot6.jpg" alt="教育机器人">
+                            </div>
+                            <div class="image-caption">双摇杆起重机</div>
+                        </a>
+                    </div>
+                    <div class="image-item has-video">
+                        <a href="https://www.720yun.com/3dm/9cezd325r85" target="_blank" style="display: block; height: 100%;">
+                            <div class="image-container">
+                                <img src="image/robot7.jpg" alt="机械臂演示">
+                            </div>
+                            <div class="image-caption">雪山避障</div>
+                        </a>
+                    </div>
+                    <div class="image-item has-video">
+                        <a href="https://3d.hunyuan.tencent.com/share?shareId=e9f5c552-7080-40b5-886c-6eda5d3b0cb0" target="_blank" style="display: block; height: 100%;">
+                            <div class="image-container">
+                                <img src="image/robot9.jpg" alt="机器人舞蹈">
+                            </div>
+                            <div class="image-caption">省力杠杠</div>
+                        </a>
+                    </div>
+                </div> <!-- 闭合唯一的image-grid容器 -->
+            </section>
+
+            <!-- AI作品集（含视频链接） -->
+            <section id="ai-section" class="content-section">
+                <h2 style="text-decoration: none;">AI作品集——让绘画作品动起来</h2>
+                <div class="image-grid">
+                    <!-- 第1-5个项目 -->
+                    <div class="image-item has-video">
+                        <a href="image\AI\1.mp4" target="_blank" style="display: block; height: 100%;">
+                            <div class="image-container">
+                                <img src="image\AI\1.jpg" alt="图像识别">
+                            </div>
+                            <div class="image-caption">火烈鸟</div>
+                        </a>
+                    </div>
+                    <div class="image-item has-video">
+                        <a href="image\AI\2.mp4" target="_blank" style="display: block; height: 100%;">
+                            <div class="image-container">
+                                <img src="image\AI\2.jpg" alt="语音交互">
+                            </div>
+                            <div class="image-caption">向日葵</div>
+                        </a>
+                    </div>
+                    <div class="image-item has-video">
+                        <a href="image\AI\3.mp4" target="_blank" style="display: block; height: 100%;">
+                            <div class="image-container">
+                                <img src="image\AI\3.jpg" alt="数据分析">
+                            </div>
+                            <div class="image-caption">皮卡丘</div>
+                        </a>
+                    </div>
+                    <div class="image-item has-video">
+                        <a href="image\AI\4.mp4" target="_blank" style="display: block; height: 100%;">
+                            <div class="image-container">
+                                <img src="image\AI\4.jpg" alt="智能推荐">
+                            </div>
+                            <div class="image-caption">蝴蝶</div>
+                        </a>
+                    </div>
+                    <div class="image-item has-video">
+                        <a href="image\AI\5.mp4" target="_blank" style="display: block; height: 100%;">
+                            <div class="image-container">
+                                <img src="image\AI\5.jpg" alt="AI绘画">
+                            </div>
+                            <div class="image-caption">猫咪</div>
+                        </a>
+                    </div>
+
+                    <!-- 第6-10个项目 -->
+                    <div class="image-item has-video">
+                        <a href="image\AI\6.mp4" target="_blank" style="display: block; height: 100%;">
+                            <div class="image-container">
+                                <img src="image\AI\6.jpg" alt="图像识别">
+                            </div>
+                            <div class="image-caption">猫咪</div>
+                        </a>
+                    </div>
+                    <div class="image-item has-video">
+                        <a href="image\AI\7.mp4" target="_blank" style="display: block; height: 100%;">
+                            <div class="image-container">
+                                <img src="image\AI\7.jpg" alt="语音交互">
+                            </div>
+                            <div class="image-caption">花瓶</div>
+                        </a>
+                    </div>
+                    <div class="image-item has-video">
+                        <a href="image\AI\8.mp4" target="_blank" style="display: block; height: 100%;">
+                            <div class="image-container">
+                                <img src="image\AI\8.jpg" alt="数据分析">
+                            </div>
+                            <div class="image-caption">蝶与四叶草</div>
+                        </a>
+                    </div>
+                    <div class="image-item has-video">
+                        <a href="image\AI\9.mp4" target="_blank" style="display: block; height: 100%;">
+                            <div class="image-container">
+                                <img src="image\AI\9.jpg" alt="智能推荐">
+                            </div>
+                            <div class="image-caption">猫咪</div>
+                        </a>
+                    </div>
+                    <div class="image-item has-video">
+                        <a href="image\AI\10.mp4" target="_blank" style="display: block; height: 100%;">
+                            <div class="image-container">
+                                <img src="image\AI\10.jpg" alt="AI绘画">
+                            </div>
+                            <div class="image-caption">猫咪</div>
+                        </a>
+                    </div>
+
+                    <!-- 第11-15个项目 -->
+                    <div class="image-item has-video">
+                        <a href="image\AI\11.mp4" target="_blank" style="display: block; height: 100%;">
+                            <div class="image-container">
+                                <img src="image\AI\11.jpg" alt="图像识别">
+                            </div>
+                            <div class="image-caption">猫咪</div>
+                        </a>
+                    </div>
+                    <div class="image-item has-video">
+                        <a href="image\AI\12.mp4" target="_blank" style="display: block; height: 100%;">
+                            <div class="image-container">
+                                <img src="image\AI\12.jpg" alt="语音交互">
+                            </div>
+                            <div class="image-caption">向日葵</div>
+                        </a>
+                    </div>
+                    <div class="image-item has-video">
+                        <a href="image\AI\13.mp4" target="_blank" style="display: block; height: 100%;">
+                            <div class="image-container">
+                                <img src="image\AI\13.jpg" alt="数据分析">
+                            </div>
+                            <div class="image-caption">房子</div>
+                        </a>
+                    </div>
+                    <div class="image-item has-video">
+                        <a href="image\AI\14.mp4" target="_blank" style="display: block; height: 100%;">
+                            <div class="image-container">
+                                <img src="image\AI\14.jpg" alt="智能推荐">
+                            </div>
+                            <div class="image-caption">猫咪</div>
+                        </a>
+                    </div>
+                    <div class="image-item has-video">
+                        <a href="image\AI\15.mp4" target="_blank" style="display: block; height: 100%;">
+                            <div class="image-container">
+                                <img src="image\AI\15.jpg" alt="AI绘画">
+                            </div>
+                            <div class="image-caption">向日葵</div>
+                        </a>
+                    </div>
+
+                    <!-- 第16个项目 -->
+                    <div class="image-item has-video">
+                        <a href="image\AI\16.mp4" target="_blank" style="display: block; height: 100%;">
+                            <div class="image-container">
+                                <img src="image\AI\16.jpg" alt="图像识别">
+                            </div>
+                            <div class="image-caption">猫咪</div>
+                        </a>
+                    </div>
+                </div> <!-- 闭合唯一的image-grid容器 -->
+            </section>
+            
+            <!-- 其他作品集 -->
+            <section id="other-section" class="content-section">
+                <h2>其他作品集</h2>
+                <div class="image-grid">
+                    <div class="image-item">
+                        <a href="image\1.jpg" target="_blank" style="display: block; height: 100%;">
+                            <div class="image-container">
+                                <img src="image\1.jpg" alt="数字孪生">
+                            </div>
+                            <div class="image-caption">小组一作品</div>
+                        </a>
+                    </div>
+                    <div class="image-item">
+                        <a href="image\2.jpg" target="_blank" style="display: block; height: 100%;">
+                            <div class="image-container">
+                                <img src="image\2.jpg" alt="数字孪生">
+                            </div>
+                            <div class="image-caption">小组二作品</div>
+                        </a>
+                    </div>
+                    <div class="image-item">
+                        <a href="image\3.jpg" target="_blank" style="display: block; height: 100%;">
+                            <div class="image-container">
+                                <img src="image\3.jpg" alt="Web应用">
+                            </div>
+                            <div class="image-caption">小组三作品</div>
+                        </a>
+                    </div>
+                    <div class="image-item">
+                        <a href="image\4.jpg" target="_blank" style="display: block; height: 100%;">
+                            <div class="image-container">
+                                <img src="image\4.jpg" alt="移动应用">
+                            </div>
+                            <div class="image-caption">拼图作品</div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <aside>
+            <section>
+                <h2>计科院助梦e夏公众号最新推文</h2>
+                <div class="wechat-tweet">
+                    <div class="source">计科院助梦e夏官方公众号</div>
+                    <a href="https://mp.weixin.qq.com/s/gOCT8R0KvHdyAq6A2Ow8YQ" target="_blank">
+                        【调研篇 | 第四日】青年访瓷，以数字技术传承大埔手工瓷器民俗文化
+                    </a>
+                    <span class="date">发布于：2025年07月17日</span>
+                </div>
+
+                <div class="wechat-tweet">
+                    <div class="source">计科院助梦e夏官方公众号</div>
+                    <a href="https://mp.weixin.qq.com/s/Zsxkc-vw_wKXH1sa5-BwTg" target="_blank">
+                        【海报篇】助梦e夏：用 VR为笔，以数字化解码陶瓷传承
+                    </a>
+                    <span class="date">发布于：2025年07月17日</span>
+                </div>
+
+                <div class="wechat-tweet">
+                    <div class="source">计科院助梦e夏官方公众号</div>
+                    <a href="https://mp.weixin.qq.com/s/0VS8ZhwAkzGj1Jn7TXtLPQ" target="_blank">
+                        【义教篇 | 第三日】体教机创融智趣，VR 探奇共成长
+                    </a>
+                    <span class="date">发布于：2025年07月16日</span>
+                </div>
+
+                <div class="wechat-tweet">
+                    <div class="source">计科院助梦e夏官方公众号</div>
+                    <a href="https://mp.weixin.qq.com/s/IOym0O5E9bcZmuA5x2x2Ww" target="_blank">
+                        【海报篇】E路繁花·童心绽放——义教课堂照片集（二）
+                    </a>
+                    <span class="date">发布于：2025年07月16日</span>
+                </div>
+                
+                <div class="wechat-tweet">
+                    <div class="source">计科院助梦e夏官方公众号</div>
+                    <a href="https://mp.weixin.qq.com/s/7e-7OapW_1MYui2g8H3OJw" target="_blank">
+                        【调研篇｜第二日】探寻大埔红色交通线：重温革命岁月，传承红色基因
+                    </a>
+                    <span class="date">发布于：2025年07月15日</span>
+                </div>
+
+                <div class="wechat-tweet">
+                    <div class="source">计科院助梦e夏官方公众号</div>
+                    <a href="https://mp.weixin.qq.com/s/53xN1_jrYQ5jLaysIyyddg" target="_blank">
+                        【三下乡 | 第一日】助梦出发，“e”夏开课啦！
+                    </a>
+                    <span class="date">发布于：2025年07月14日</span>
+                </div>
+
+                <div class="wechat-tweet">
+                    <div class="source">计科院助梦e夏官方公众号</div>
+                    <a href="https://mp.weixin.qq.com/s/ojkR-F4vleWcVFyitkE80g" target="_blank">
+                        E路繁花·童心绽放——助梦e夏义教课堂照片集
+                    </a>
+                    <span class="date">发布于：2025年07月14日</span>
+                </div>
+                
+                <div class="wechat-tweet">
+                    <div class="source">计科院助梦e夏官方公众号</div>
+                    <a href="https://mp.weixin.qq.com/s/pDaMBcFXWhuVPDIwEQKiJg" target="_blank">
+                        【三下乡】助梦 e 夏赴埔乡，青春实践启新章
+                    </a>
+                    <span class="date">发布于：2025年07月13日</span>
+                </div>
+                
+                <div class="wechat-tweet">
+                    <div class="source">计科院助梦e夏官方公众号</div>
+                    <a href="https://mp.weixin.qq.com/s/c7HzL8t6EqutaMDwE_h9lQ" target="_blank">
+                        三下乡启幕！VR 解锁大埔中学新视界！
+                    </a>
+                    <span class="date">发布于：2025年07月13日</span>
+                </div>
+
+                <div class="wechat-tweet">
+                    <div class="source">计科院助梦e夏官方公众号</div>
+                    <a href="https://mp.weixin.qq.com/s/dkuL0jtRC8TO7qaFMSJ63A" target="_blank">
+                        【三下乡 | 成员介绍篇】"e"路向乡，"夏"一站梅州大埔!
+                    </a>
+                    <span class="date">发布于：2025年07月10日</span>
+                </div>
+            </section>
+        </aside>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 广东技术师范大学助梦e夏团队 | 版权所有</p>
+    </footer>
+
+    <script>
+        // 获取所有导航链接和内容板块
+        const navLinks = document.querySelectorAll('.nav-link');
+        const contentSections = document.querySelectorAll('.content-section');
+        const container = document.querySelector('.container');
+        
+        // 为每个导航链接添加点击事件
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                // 获取目标板块ID
+                const targetId = link.getAttribute('data-target');
+                
+                // 隐藏所有内容板块
+                contentSections.forEach(section => {
+                    section.classList.remove('active');
+                });
+                
+                // 显示目标板块
+                document.getElementById(targetId).classList.add('active');
+                
+                // 控制侧边栏显示/隐藏：仅首页显示最新推文
+                if (targetId === 'home') {
+                    container.classList.remove('sidebar-hidden');
+                } else {
+                    container.classList.add('sidebar-hidden');
+                }
+                
+                // 滚动到页面顶部
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // 为视频项目添加点击跳转功能（已通过<a>标签实现，此处为备用逻辑）
+        document.querySelectorAll('.image-item.has-video').forEach(item => {
+            // 若需自定义跳转逻辑，可在此处添加
+            // 例如：item.addEventListener('click', () => { window.open(视频链接, '_blank'); });
+        });
+    </script>
+    <script>
+         //1. 初始数据
+         const sliderData = [
+         { url: 'image/AI课/1.JPG' },
+         { url: 'image/AI课/2.JPG' },
+         { url: 'image/AI课/3.JPG' },
+         { url: 'image/AI课/4.JPG' },
+         { url: 'image/AI课/5.JPG' },
+         { url: 'image/AI课/6.JPG'},
+         { url: 'image/AI课/7.JPG' },
+        //  { url: 'image/AI课/8.JPG' },
+        //  { url: 'image/AI课/9.JPG' },
+         ]
+         
+         // 1. 获取元素 
+         const img = document.querySelector('.image-item img')
+         let i = 0  // 信号量 控制图片的张数
+         // 2. 开启定时器
+         //console.log(sliderData[i]) //拿到对应的对象啦
+         setInterval(function () {
+         i++
+         // 无缝衔接位置  一共八张图片，到了最后一张就是 8， 数组的长度就是 8
+         if (i >= sliderData.length) {
+             i = 0
+         }
+         // console.log(i)
+         // console.log(sliderData[i])
+         // 更换图片路径  
+         img.src = sliderData[i].url
+         }, 1000) 
+    </script>
+    <script>
+         //1. 初始数据
+         const sliderData1 = [
+         { url: 'image/VR/1.JPG' },
+         { url: 'image/VR/2.JPG' },
+         { url: 'image/VR/3.JPG' },
+         { url: 'image/VR/4.JPG' },
+         { url: 'image/VR/5.JPG' },
+         { url: 'image/VR/6.JPG'},
+         { url: 'image/VR/7.JPG' },
+        //  { url: 'image/AI课/8.JPG' },
+        //  { url: 'image/AI课/9.JPG' },
+         ]
+         
+         // 1. 获取元素 
+         const img1 = document.querySelector('.image-item1 img')
+         let i1 = 0  // 信号量 控制图片的张数
+         // 2. 开启定时器
+         //console.log(sliderData[i]) //拿到对应的对象啦
+         setInterval(function () {
+         i1++
+         // 无缝衔接位置  一共八张图片，到了最后一张就是 8， 数组的长度就是 8
+         if (i1 >= sliderData1.length) {
+             i1 = 0
+         }
+         // console.log(i)
+         // console.log(sliderData[i])
+         // 更换图片路径  
+         img1.src = sliderData1[i].url
+         }, 1000) 
+    </script>
+    <script>
+         //1. 初始数据
+         const sliderData2 = [
+         { url: 'image/机器人课/1.JPG' },
+         { url: 'image/机器人课/2.JPG' },
+         { url: 'image/机器人课/3.JPG' },
+         { url: 'image/机器人课/4.JPG' },
+         { url: 'image/机器人课/5.JPG' },
+         { url: 'image/机器人课/6.JPG' },
+         { url: 'image/机器人课/7.JPG' },
+         { url: 'image/机器人课/8.JPG' },
+         { url: 'image/机器人课/9.JPG' },
+         { url: 'image/机器人课/10.JPG' },
+         { url: 'image/机器人课/11.JPG' },
+         { url: 'image/机器人课/12.JPG' },
+         { url: 'image/机器人课/13.JPG' }
+         ]
+         
+         // 1. 获取元素 
+         const img2 = document.querySelector('.image-item2 img')
+         let i2 = 0  // 信号量 控制图片的张数
+         // 2. 开启定时器
+         //console.log(sliderData[i]) //拿到对应的对象啦
+         setInterval(function () {
+         i2++
+         // 无缝衔接位置  一共八张图片，到了最后一张就是 8， 数组的长度就是 8
+         if (i2 >= sliderData2.length) {
+             i2 = 0
+         }
+         // console.log(i)
+         // console.log(sliderData[i])
+         // 更换图片路径  
+         img2.src = sliderData2[i].url
+         }, 1000) 
+    </script>
+    <script>
+         //1. 初始数据
+         const sliderData3 = [
+         { url: 'image/小组合作实践/1.JPG' },
+         { url: 'image/小组合作实践/2.JPG' },
+         { url: 'image/小组合作实践/3.JPG' },
+         { url: 'image/小组合作实践/4.JPG' },
+         { url: 'image/小组合作实践/5.JPG' },
+         { url: 'image/小组合作实践/6.JPG' },
+         { url: 'image/小组合作实践/7.JPG' }
+         ]
+         
+         // 1. 获取元素 
+         const img3 = document.querySelector('.image-item3 img')
+         let i3 = 0  // 信号量 控制图片的张数
+         // 2. 开启定时器
+         //console.log(sliderData[i]) //拿到对应的对象啦
+         setInterval(function () {
+         i3++
+         // 无缝衔接位置  一共八张图片，到了最后一张就是 8， 数组的长度就是 8
+         if (i3 >= sliderData3.length) {
+             i3 = 0
+         }
+         // console.log(i)
+         // console.log(sliderData[i])
+         // 更换图片路径  
+         img3.src = sliderData3[i].url
+         }, 1000) 
+    </script>
+    <script>
+         //1. 初始数据
+         const sliderData4 = [
+         { url: 'image/成果展示/1.JPG' },
+         { url: 'image/成果展示/2.JPG' },
+         { url: 'image/成果展示/3.JPG' }
+        //  { url: 'image/成果展示/4.JPG' },
+        //  { url: 'image/成果展示/5.JPG' },
+        //  { url: 'image/小组合作实践/6.JPG' }
+         ]
+         
+         // 1. 获取元素 
+         const img4 = document.querySelector('.image-item4 img')
+         let i4 = 0  // 信号量 控制图片的张数
+         // 2. 开启定时器
+         //console.log(sliderData[i]) //拿到对应的对象啦
+         setInterval(function () {
+         i3++
+         // 无缝衔接位置  一共八张图片，到了最后一张就是 8， 数组的长度就是 8
+         if (i4 >= sliderData4.length) {
+             i4 = 0
+         }
+         // console.log(i)
+         // console.log(sliderData[i])
+         // 更换图片路径  
+         img4.src = sliderData4[i].url
+         }, 1000) 
+    </script>
+    
+    <script>
+         //1. 初始数据
+         const sliderData5 = [
+         { url: 'image/其他课/1.JPG' },
+         { url: 'image/其他课/2.JPG' },
+         { url: 'image/其他课/3.JPG' },
+         { url: 'image/其他课/4.JPG' },
+         { url: 'image/其他课/5.JPG' },
+         { url: 'image/其他课/6.JPG' },
+         { url: 'image/其他课/7.JPG' },
+         { url: 'image/其他课/8.JPG' },
+         { url: 'image/其他课/9.JPG' },
+         { url: 'image/其他课/10.JPG' }
+         ]
+         
+         // 1. 获取元素 
+         const img5 = document.querySelector('.image-item5 img')
+         let i5 = 0  // 信号量 控制图片的张数
+         // 2. 开启定时器
+         //console.log(sliderData[i]) //拿到对应的对象啦
+         setInterval(function () {
+         i5++
+         // 无缝衔接位置  一共八张图片，到了最后一张就是 8， 数组的长度就是 8
+         if (i5 >= sliderData5.length) {
+             i5 = 0
+         }
+         // console.log(i)
+         // console.log(sliderData[i])
+         // 更换图片路径  
+         img5.src = sliderData5[i].url
+         }, 1000) 
+    </script>
+    <script>
+         //1. 初始数据
+         const sliderData6 = [
+         { url: 'image/活动启动仪式/1.JPG' },
+         { url: 'image/活动启动仪式/2.JPG' },
+         { url: 'image/活动启动仪式/3.JPG' },
+         { url: 'image/活动启动仪式/4.JPG' },
+         { url: 'image/活动启动仪式/5.JPG' }
+         ]
+         
+         // 1. 获取元素 
+         const img6 = document.querySelector('.image-item6 img')
+         let i6 = 0  // 信号量 控制图片的张数
+         // 2. 开启定时器
+         //console.log(sliderData[i]) //拿到对应的对象啦
+         setInterval(function () {
+         i6++
+         // 无缝衔接位置  一共八张图片，到了最后一张就是 8， 数组的长度就是 8
+         if (i6 >= sliderData6.length) {
+             i6 = 0
+         }
+         // console.log(i)
+         // console.log(sliderData[i])
+         // 更换图片路径  
+         img6.src = sliderData6[i].url
+         }, 1000) 
+    </script>
+    <script>
+         //1. 初始数据
+         const sliderData7 = [
+         { url: 'image/当地学生参观公安局旧址/1.JPG' },
+         { url: 'image/当地学生参观公安局旧址/2.JPG' },
+         { url: 'image/当地学生参观公安局旧址/3.JPG' },
+         { url: 'image/当地学生参观公安局旧址/4.JPG' },
+         { url: 'image/当地学生参观公安局旧址/5.JPG' }
+         ]
+         
+         // 1. 获取元素 
+         const img7 = document.querySelector('.image-item7 img')
+         let i7 = 0  // 信号量 控制图片的张数
+         // 2. 开启定时器
+         //console.log(sliderData[i]) //拿到对应的对象啦
+         setInterval(function () {
+         i7++
+         // 无缝衔接位置  一共八张图片，到了最后一张就是 8， 数组的长度就是 8
+         if (i7 >= sliderData7.length) {
+             i7 = 0
+         }
+         // console.log(i)
+         // console.log(sliderData[i])
+         // 更换图片路径  
+         img7.src = sliderData7[i].url
+         }, 1000) 
+    </script>
+    <script>
+         //1. 初始数据
+         const sliderData8 = [
+         { url: 'image/团队研讨教学方案/1.JPG' },
+         { url: 'image/团队研讨教学方案/2.JPG' },
+         { url: 'image/团队研讨教学方案/3.JPG' },
+         { url: 'image/团队研讨教学方案/4.JPG' },
+         { url: 'image/团队研讨教学方案/5.JPG' }
+         ]
+         
+         // 1. 获取元素 
+         const img8 = document.querySelector('.image-item8 img')
+         let i8 = 0  // 信号量 控制图片的张数
+         // 2. 开启定时器
+         //console.log(sliderData[i]) //拿到对应的对象啦
+         setInterval(function () {
+         i8++
+         // 无缝衔接位置  一共八张图片，到了最后一张就是 8， 数组的长度就是 8
+         if (i8 >= sliderData8.length) {
+             i8 = 0
+         }
+         // console.log(i)
+         // console.log(sliderData[i])
+         // 更换图片路径  
+         img8.src = sliderData8[i].url
+         }, 1000) 
+    </script>
+    <script>
+         //1. 初始数据
+         const sliderData9 = [
+         { url: 'image/教师团合照/1.JPG' },
+         { url: 'image/教师团合照/2.JPG' },
+         { url: 'image/教师团合照/3.JPG' },
+         { url: 'image/教师团合照/4.JPG' },
+         { url: 'image/教师团合照/5.JPG' },
+         { url: 'image/教师团合照/6.JPG' },
+         { url: 'image/教师团合照/7.JPG' },
+         { url: 'image/教师团合照/8.JPG' },
+         { url: 'image/教师团合照/9.JPG' },
+         { url: 'image/教师团合照/10.JPG' }
+         ]
+         
+         // 1. 获取元素 
+         const img9 = document.querySelector('.image-item9 img')
+         let i9 = 0  // 信号量 控制图片的张数
+         // 2. 开启定时器
+         //console.log(sliderData[i]) //拿到对应的对象啦
+         setInterval(function () {
+         i9++
+         // 无缝衔接位置  一共八张图片，到了最后一张就是 8， 数组的长度就是 8
+         if (i9 >= sliderData9.length) {
+             i9 = 0
+         }
+         // console.log(i)
+         // console.log(sliderData[i])
+         // 更换图片路径  
+         img9.src = sliderData9[i].url
+         }, 1000) 
+    </script>
+    <script>
+         //1. 初始数据
+         const sliderData10 = [
+         { url: 'image/成果展示/1.JPG' },
+         { url: 'image/成果展示/2.JPG' },
+         { url: 'image/成果展示/3.JPG' }
+         ]
+         
+         // 1. 获取元素 
+         const img10 = document.querySelector('.image-item10 img')
+         let i10 = 0  // 信号量 控制图片的张数
+         // 2. 开启定时器
+         //console.log(sliderData[i]) //拿到对应的对象啦
+         setInterval(function () {
+         i10++
+         // 无缝衔接位置  一共八张图片，到了最后一张就是 8， 数组的长度就是 8
+         if (i10 >= sliderData10.length) {
+             i10 = 0
+         }
+         // console.log(i)
+         // console.log(sliderData[i])
+         // 更换图片路径  
+         img10.src = sliderData10[i].url
+         }, 1000) 
+    </script>
+    <script>
+         //1. 初始数据
+         const sliderData11 = [
+         { url: 'image/师生合影留念/1.JPG' },
+         { url: 'image/师生合影留念/2.JPG' },
+         { url: 'image/师生合影留念/3.JPG' }
+         ]
+         
+         // 1. 获取元素 
+         const img11 = document.querySelector('.image-item11 img')
+         let i11 = 0  // 信号量 控制图片的张数
+         // 2. 开启定时器
+         //console.log(sliderData[i]) //拿到对应的对象啦
+         setInterval(function () {
+         i11++
+         // 无缝衔接位置  一共八张图片，到了最后一张就是 8， 数组的长度就是 8
+         if (i11 >= sliderData11.length) {
+             i11 = 0
+         }
+         // console.log(i)
+         // console.log(sliderData[i])
+         // 更换图片路径  
+         img11.src = sliderData11[i].url
+         }, 1000) 
+    </script>
+</body>
+</html>
